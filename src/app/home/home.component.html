@@ -5,23 +5,30 @@
     <div
       class="flex h-screen flex-row items-center justify-center space-x-8 overflow-hidden text-center"
     >
-      <div class="flex flex-col text-[#FFFFFF]">
-        <h1 class="text-7xl tracking-wider">Fake Store API</h1>
-
-        <p>
+      <div
+        class="flex flex-col text-[#FFFFFF] justify-start items-start space-y-2"
+      >
+        <div class="flex flex-row justify-center items-center mx-auto">
+          <img
+            src="./assets/logo.png"
+            alt="logo"
+            class="hidden lg:inline w-32"
+          />
+          <h1 class="text-3xl lg:text-7xl tracking-wider">Fake Store API</h1>
+        </div>
+        <p class="text-sm">
           Fake store rest API for your e-commerce or shopping website prototype.
         </p>
-
         <a
           routerLink="/docs"
           routerLinkActive="active"
           ariaCurrentWhenActive="page"
-          class="w-1/4 mt-5 px-4 py-2 border border-[#8896A6] rounded bg-[#0000B9] hover:bg-[#0000B9]/60 hover:border[#FFFFFF] transition-all duration-300 ease-in-out"
+          class="text-sm lg:text-base w-3/4 lg:w-1/4 mt-5 px-4 py-2 border border-[#8896A6] rounded bg-[#0000B9] hover:bg-[#0000B9]/60 hover:border[#FFFFFF] transition-all duration-300 ease-in-out mx-auto"
           >View Docs</a
         >
       </div>
 
-      <div>
+      <div class="hidden lg:block">
         <img class="img-responsive w-60" src="assets/api.png" />
       </div>
     </div>
@@ -31,8 +38,8 @@
     <div
       class="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-center space-y-5 px-10 text-center md:flex-col md:text-left"
     >
-      <h1 class="text-3xl text-white">Get All Products</h1>
-      <p class="text-sm bg-black p-4 text-white rounded">
+      <h1 class="text-2xl lg:text-3xl text-white">Get All Products</h1>
+      <p class="text-xs lg:base bg-black p-4 text-white rounded">
         <code>[GET] https://api.mdev.co/api/v1/products</code>
       </p>
       <div
@@ -64,8 +71,8 @@
     <div
       class="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-center space-y-5 px-10 text-center md:flex-col md:text-left"
     >
-      <h1 class="text-3xl text-white">Get All Categories</h1>
-      <p class="text-sm bg-black p-4 text-white rounded">
+      <h1 class="text-2xl lg:text-3xl text-white">Get All Categories</h1>
+      <p class="text-xs lg:base bg-black p-4 text-white rounded">
         <code>[GET] https://api.mdev.co/api/v1/categories</code>
       </p>
       <div
@@ -97,8 +104,8 @@
     <div
       class="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-center space-y-5 px-10 text-center md:flex-col md:text-left"
     >
-      <h1 class="text-3xl text-white">Get All Users</h1>
-      <p class="text-sm bg-black p-4 text-white rounded">
+      <h1 class="text-2xl lg:text-3xl text-white">Get All Users</h1>
+      <p class="text-xs lg:base bg-black p-4 text-white rounded">
         <code>[GET] https://api.mdev.co/api/v1/users</code>
       </p>
       <div
