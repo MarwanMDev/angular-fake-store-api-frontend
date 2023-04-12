@@ -27,13 +27,67 @@
         >
           Products
         </div>
-        <a href="/products" class="text-decoration-none">Filter Products</a>
-        <a href="/products" class="text-decoration-none">Categories</a>
-        <a href="/products" class="text-decoration-none">Users</a>
-        <a href="/products" class="text-decoration-none">Auth JWT</a>
-        <a href="/products" class="text-decoration-none mb-2">Files</a>
-        <h4>Resources</h4>
-        <a href="/products" class="text-decoration-none">Postman</a>
+        <div
+          (click)="toggleTabs(3)"
+          [ngClass]="{
+            'text-white': openTab !== 3,
+            'text-pink-600': openTab === 3
+          }"
+          class="cursor-pointer hover:text-pink-600 transition duration-300 ease-in-out"
+        >
+          Filter Products
+        </div>
+        <div
+          (click)="toggleTabs(4)"
+          [ngClass]="{
+            'text-white': openTab !== 4,
+            'text-pink-600': openTab === 4
+          }"
+          class="cursor-pointer hover:text-pink-600 transition duration-300 ease-in-out"
+        >
+          Categories
+        </div>
+        <div
+          (click)="toggleTabs(5)"
+          [ngClass]="{
+            'text-white': openTab !== 5,
+            'text-pink-600': openTab === 5
+          }"
+          class="cursor-pointer hover:text-pink-600 transition duration-300 ease-in-out"
+        >
+          Users
+        </div>
+        <div
+          (click)="toggleTabs(6)"
+          [ngClass]="{
+            'text-white': openTab !== 6,
+            'text-pink-600': openTab === 6
+          }"
+          class="cursor-pointer hover:text-pink-600 transition duration-300 ease-in-out"
+        >
+          Auth JWT
+        </div>
+        <div
+          (click)="toggleTabs(7)"
+          [ngClass]="{
+            'text-white': openTab !== 7,
+            'text-pink-600': openTab === 7
+          }"
+          class="cursor-pointer hover:text-pink-600 transition duration-300 ease-in-out"
+        >
+          Files
+        </div>
+        <h4 class="mt-2">Resources</h4>
+        <div
+          (click)="toggleTabs(8)"
+          [ngClass]="{
+            'text-white': openTab !== 8,
+            'text-pink-600': openTab === 8
+          }"
+          class="cursor-pointer hover:text-pink-600 transition duration-300 ease-in-out"
+        >
+          Postman
+        </div>
       </div>
       <div
         class="w-2/4 flex flex-col justify-start items-start space-y-2"
@@ -70,8 +124,80 @@
         class="w-2/4 flex flex-col justify-start items-start space-y-2"
         [ngClass]="{ hidden: openTab !== 2, block: openTab === 2 }"
       >
-        <h2 class="text-3xl">Introduction</h2>
+        <h2 class="text-3xl">Products</h2>
         <h2 class="text-xl">Get all products</h2>
+        <p>
+          You can access the list of 200 products by using the
+          <code>/products</code> endpoint.
+        </p>
+        <p>Request:</p>
+      </div>
+      <div
+        class="w-2/4 flex flex-col justify-start items-start space-y-2"
+        [ngClass]="{ hidden: openTab !== 3, block: openTab === 3 }"
+      >
+        <h2 class="text-3xl">Filter Products</h2>
+        <h2 class="text-xl">Get all products</h2>
+        <p>
+          You can access the list of 200 products by using the
+          <code>/products</code> endpoint.
+        </p>
+        <p>Request:</p>
+      </div>
+      <div
+        class="w-2/4 flex flex-col justify-start items-start space-y-2"
+        [ngClass]="{ hidden: openTab !== 4, block: openTab === 4 }"
+      >
+        <h2 class="text-3xl">Categories</h2>
+        <h2 class="text-xl">Get all categories</h2>
+        <p>
+          You can access the list of 200 products by using the
+          <code>/products</code> endpoint.
+        </p>
+        <p>Request:</p>
+      </div>
+      <div
+        class="w-2/4 flex flex-col justify-start items-start space-y-2"
+        [ngClass]="{ hidden: openTab !== 5, block: openTab === 5 }"
+      >
+        <h2 class="text-3xl">Users</h2>
+        <h2 class="text-xl">Get all categories</h2>
+        <p>
+          You can access the list of 200 products by using the
+          <code>/products</code> endpoint.
+        </p>
+        <p>Request:</p>
+      </div>
+      <div
+        class="w-2/4 flex flex-col justify-start items-start space-y-2"
+        [ngClass]="{ hidden: openTab !== 6, block: openTab === 6 }"
+      >
+        <h2 class="text-3xl">Auth JWT</h2>
+        <h2 class="text-xl">Get all categories</h2>
+        <p>
+          You can access the list of 200 products by using the
+          <code>/products</code> endpoint.
+        </p>
+        <p>Request:</p>
+      </div>
+      <div
+        class="w-2/4 flex flex-col justify-start items-start space-y-2"
+        [ngClass]="{ hidden: openTab !== 7, block: openTab === 7 }"
+      >
+        <h2 class="text-3xl">Files</h2>
+        <h2 class="text-xl">Get all categories</h2>
+        <p>
+          You can access the list of 200 products by using the
+          <code>/products</code> endpoint.
+        </p>
+        <p>Request:</p>
+      </div>
+      <div
+        class="w-2/4 flex flex-col justify-start items-start space-y-2"
+        [ngClass]="{ hidden: openTab !== 8, block: openTab === 8 }"
+      >
+        <h2 class="text-3xl">Postman</h2>
+        <h2 class="text-xl">Get all categories</h2>
         <p>
           You can access the list of 200 products by using the
           <code>/products</code> endpoint.
