@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { DocsComponent } from './docs/docs.component';
 import { HomeComponent } from './home/home.component';
 import { RatingComponent } from './shared/rating/rating.component';
+import { CardComponent } from './shared/card/card.component';
 // import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 @NgModule({
-  declarations: [AppComponent, DocsComponent, HomeComponent, RatingComponent],
+  declarations: [AppComponent, DocsComponent, HomeComponent, RatingComponent, CardComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     // {

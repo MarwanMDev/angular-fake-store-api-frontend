@@ -13,7 +13,7 @@ export interface Product {
   idsku?: string;
   name: string;
   description: string;
-  category: Category;
+  category: Category | undefined;
   price: string;
   availableSize: string;
   availableColors: string;
