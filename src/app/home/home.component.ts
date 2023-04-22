@@ -1,13 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { CategoryService } from '../services/category.service';
+import { Product, ProductResponse } from 'typings';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  products: any;
+  productResponse: ProductResponse = {
+    error: false,
+    total: 0,
+    limit: 0,
+    page: 1,
+    products: [],
+  };
+  products: Product[] = this.productResponse.products;
   categories: any;
 
   constructor(
@@ -17,7 +26,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.productService.getProducs().subscribe((response: any) => {
-      this.products = response.data;
+      this.products = response.data.products;
     });
     this.categoryService.getCategories().subscribe((response: any) => {
       this.categories = response.data;
@@ -25,6 +34,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngDoCheck() {
-    console.log(this.categories);
+    console.log(this.products);
   }
 }
