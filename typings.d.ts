@@ -9,10 +9,21 @@ export interface ProductResponse {
 
 // Product
 export interface Product {
-  title: string;
-  price: string;
+  sku?: string;
+  idsku?: string;
+  name: string;
   description: string;
   category: Category;
+  price: string;
+  availableSize: string;
+  availableColors: string;
+  size: string;
+  color: string;
+  discount: number;
+  unitWeight: number;
+  productAvailability: boolean;
+  discountAvailable: boolean;
+  rating: number;
   images: [];
 }
 

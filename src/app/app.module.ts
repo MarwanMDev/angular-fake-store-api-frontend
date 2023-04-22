@@ -6,10 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { DocsComponent } from './docs/docs.component';
 import { HomeComponent } from './home/home.component';
+import { RatingComponent } from './shared/rating/rating.component';
 // import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 @NgModule({
-  declarations: [AppComponent, DocsComponent, HomeComponent],
+  declarations: [AppComponent, DocsComponent, HomeComponent, RatingComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     // {
